@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #c7ccc6;
+  align-items: center;
+
+}
+
+.header-centered {
+  padding: 30vh 5rem 5rem 5rem; /* Push it to vertical center */
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  color: #0731eb;
+  font-style: bold;
+}
+
+.header-top .title{
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #084577;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #061c9c;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #053453;
+  margin-top: 0.5rem;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+main {
+  flex: 1;
+  width: 95%;
+  height: 100%;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px; /* Adjust this value based on your footer height */
+  opacity: 0;
+  scrollbar-width: thin;
+  transition: opacity 0.3s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+.main-visible {
+  opacity: 1;
+}
+
+/* Custom scrollbar */
+main::-webkit-scrollbar {
+  width: 8px;
+}
+
+main::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.chat-messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+.message-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.message {
+  max-width: 80%;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+}
+
+
+.user-message {
+  margin-left: auto;
+  background-color: #abb9ab;
+  color: rgb(1, 73, 114);
+  border-bottom-right-radius: 0.25rem;
+}
+
+.system-message {
+  margin-right: auto;
+  background-color: #eff1f0;
+  color: #124c1f;
+  border-bottom-left-radius: 0.25rem;
+}
+
+
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: rgb(11, 0, 167);
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.suggestion-button {
+  background-color: transparent !important;
+  border: transparent !important;
+  color: #165610 !important;
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 0.1rem;
+
+  transition: all 0.2s ease;
+}
+
+.suggestion-button:hover {
+  background-color: transparent !important;
+  transform: translateY(-1px);
+  color: rgb(74, 85, 6);
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  gap: 0.5rem;
+  width: 50%;
+  height: 50px;
+
+}
+
+input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+footer button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  
+  padding: 0;
+  border: none;
+  background-image: linear-gradient(to right, #5c9fde , #0a29c2);
+  color: white;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-image: linear-gradient(to right,#a2d2ff , #06adfa);
+}
+
+/* Spinner CSS */
+.spinner {
+  border: 2px solid #471de3;
+  border-top: 2px solid #2188a4;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Improved animated dots */
+.dots-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: transparent;
+  box-shadow: none;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  margin: 0 4px;
+  border-radius: 50%;
+  background: #2563eb; /* blue-600 */
+  opacity: 0.5;
+  animation: dotJump 1.2s infinite;
+  display: inline-block;
+}
+
+.dot1 { animation-delay: 0s; }
+.dot2 { animation-delay: 0.2s; }
+.dot3 { animation-delay: 0.4s; }
+
+@keyframes dotJump {
+  0%, 80%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+  40% {
+    transform: translateY(-8px) scale(1.2);
+    opacity: 1;
+  }
+}
