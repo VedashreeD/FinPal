@@ -46,8 +46,7 @@ Bringing FinPal to life was an exhilarating journey, piecing together a robust b
 
 ## 3. Try It Out / See the Code
 
-- **GitHub Repository:** [https://github.com/vedad/FinPal](https://github.com/vedad/FinPal)
-- **Live Demo:** _[Add link if deployed, otherwise remove this line]_
+- **Live Demo:** https://youtu.be/5hh8IZiM7z0?si=vl3OYfMIdrSg5c5K
 
 ---
 
