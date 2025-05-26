@@ -74,7 +74,7 @@ Bringing FinPal to life was an exhilarating journey, piecing together a robust b
 
 3. **Run the FastAPI server:**
    ```bash
-   uvicorn app:app --reload
+   python main.py
    ```
    The backend will be accessible at `http://127.0.0.1:8000`.
 
