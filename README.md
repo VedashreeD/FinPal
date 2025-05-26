@@ -1,5 +1,5 @@
 # FinPal: Your Finance Pal  
-FinPal: Your sidekick for financial superpowers.
+FinPal: Your sidekick for smart finance.
 
 ---
 
